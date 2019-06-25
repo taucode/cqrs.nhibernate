@@ -14,6 +14,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "misc", "misc", "{BB0AD8E1-B
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nuget", "nuget", "{4EE5C30C-4201-4652-AB94-49E8F9E055C8}"
+	ProjectSection(SolutionItems) = preProject
+		nuget\TauCode.Cqrs.NHibernate.nuspec = nuget\TauCode.Cqrs.NHibernate.nuspec
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TauCode.Cqrs.NHibernate", "src\TauCode.Cqrs.NHibernate\TauCode.Cqrs.NHibernate.csproj", "{5BEEA7F4-64DB-403C-AAE8-209B61C5CFA6}"
 EndProject
