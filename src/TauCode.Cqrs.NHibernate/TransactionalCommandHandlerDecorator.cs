@@ -1,6 +1,6 @@
 ﻿using NHibernate;
 using System;
-using System.Transactions;
+using System.Data;
 using TauCode.Cqrs.Commands;
 
 namespace TauCode.Cqrs.NHibernate
@@ -19,18 +19,13 @@ namespace TauCode.Cqrs.NHibernate
 
         public virtual void Execute(TCommand command)
         {
-            using (var transaction = new TransactionScope(
-                TransactionScopeOption.Required,
-                new TransactionOptions
-                {
-                    IsolationLevel = IsolationLevel.ReadCommitted
-                }))
+            using (var transaction = _session.BeginTransaction(IsolationLevel.ReadCommitted))
             {
                 this.CommandHandler.Execute(command);
 
                 _session.Flush();
 
-                transaction.Complete();
+                transaction.Commit();
             }
         }
     }

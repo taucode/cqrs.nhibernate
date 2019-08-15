@@ -1,3 +1,8 @@
 2019-06-24
 ==========
-    1. Built for .NET Standard
+    1. Ported to the .NET Standard.
+
+2019-08-15
+==========
+    Version: 2.19.1-dev-0815-1213
+    1. Replaced system transactions with ADO ones.
