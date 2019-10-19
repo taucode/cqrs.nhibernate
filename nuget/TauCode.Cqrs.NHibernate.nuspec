@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>TauCode.Cqrs.NHibernate</id>
-    <version>2.19.1-dev-0815-1213</version>
+    <version>2.19.3</version>
     <authors>TauCode</authors>
     <owners>TauCode</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -10,12 +10,12 @@
     <projectUrl>http://taucode.com/</projectUrl>
     <description>Basic functionality for CQRS support via NHibernate</description>
     <releaseNotes>
-      1. Replaced system transactions with ADO ones.
+      1. Added async support.
     </releaseNotes>
     <tags>taucode cqrs nhibernate</tags>
     <dependencies>
-      <dependency id="NHibernate" version="5.2.5" />
-      <dependency id="TauCode.Cqrs" version="2.19.1-dev-0625-0001" />
+      <dependency id="NHibernate" version="5.2.6" />
+      <dependency id="TauCode.Cqrs" version="2.19.3" />
     </dependencies>
   </metadata>
   <files>
