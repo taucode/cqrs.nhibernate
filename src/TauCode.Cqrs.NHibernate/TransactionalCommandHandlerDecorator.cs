@@ -1,6 +1,7 @@
 ﻿using NHibernate;
 using System;
 using System.Data;
+using System.Threading;
 using System.Threading.Tasks;
 using TauCode.Cqrs.Commands;
 
@@ -28,13 +29,13 @@ namespace TauCode.Cqrs.NHibernate
             }
         }
 
-        public async Task ExecuteAsync(TCommand command)
+        public async Task ExecuteAsync(TCommand command, CancellationToken cancellationToken)
         {
             using (var transaction = _session.BeginTransaction(IsolationLevel.ReadCommitted))
             {
-                await this.CommandHandler.ExecuteAsync(command);
-                await _session.FlushAsync();
-                await transaction.CommitAsync();
+                await this.CommandHandler.ExecuteAsync(command, cancellationToken);
+                await _session.FlushAsync(cancellationToken);
+                await transaction.CommitAsync(cancellationToken);
             }
         }
     }
