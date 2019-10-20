@@ -6,7 +6,7 @@
 
   <ItemGroup>
     <PackageReference Include="NHibernate" Version="5.2.6" />
-    <PackageReference Include="TauCode.Cqrs" Version="2.19.3" />
+    <PackageReference Include="TauCode.Cqrs" Version="3.0.0" />
   </ItemGroup>
 
 </Project>
