@@ -14,8 +14,10 @@
     </releaseNotes>
     <tags>taucode cqrs nhibernate</tags>
     <dependencies>
-      <dependency id="NHibernate" version="5.2.6" />
-      <dependency id="TauCode.Cqrs" version="1.0.0-dev-2019-12-22-00-45" />
+      <group targetFramework=".NETStandard2.1">
+        <dependency id="NHibernate" version="5.2.7" />
+        <dependency id="TauCode.Cqrs" version="1.0.0-dev-2020-03-16-00-23" />
+      </group>
     </dependencies>
   </metadata>
   <files>
