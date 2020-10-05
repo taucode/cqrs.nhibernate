@@ -21,22 +21,18 @@ namespace TauCode.Cqrs.NHibernate
 
         public virtual void Execute(TCommand command)
         {
-            using (var transaction = _session.BeginTransaction(IsolationLevel.ReadCommitted))
-            {
-                this.CommandHandler.Execute(command);
-                _session.Flush();
-                transaction.Commit();
-            }
+            using var transaction = _session.BeginTransaction(IsolationLevel.ReadCommitted);
+            this.CommandHandler.Execute(command);
+            _session.Flush();
+            transaction.Commit();
         }
 
         public async Task ExecuteAsync(TCommand command, CancellationToken cancellationToken)
         {
-            using (var transaction = _session.BeginTransaction(IsolationLevel.ReadCommitted))
-            {
-                await this.CommandHandler.ExecuteAsync(command, cancellationToken);
-                await _session.FlushAsync(cancellationToken);
-                await transaction.CommitAsync(cancellationToken);
-            }
+            using var transaction = _session.BeginTransaction(IsolationLevel.ReadCommitted);
+            await this.CommandHandler.ExecuteAsync(command, cancellationToken);
+            await _session.FlushAsync(cancellationToken);
+            await transaction.CommitAsync(cancellationToken);
         }
     }
 }
