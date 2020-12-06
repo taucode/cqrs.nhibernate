@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>TauCode.Cqrs.NHibernate</id>
-    <version>1.3.2.1-dev-2020-10-11-16-25</version>
+    <version>1.3.2.2-dev-2020-12-06-21-01</version>
     <authors>TauCode</authors>
     <owners>TauCode</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -10,13 +10,13 @@
     <projectUrl>https://github.com/taucode/taucode.cqrs.nhibernate</projectUrl>
     <description>Basic functionality for CQRS support via NHibernate</description>
     <releaseNotes>
-      Migrating to Azure DevOps.
+      Libraries arrangement.
     </releaseNotes>
     <tags>taucode cqrs nhibernate</tags>
     <dependencies>
       <group targetFramework=".NETStandard2.1">
-        <dependency id="NHibernate" version="5.3.3" />
-        <dependency id="TauCode.Cqrs" version="1.3.2.1-dev-2020-10-11-15-28" />
+        <dependency id="NHibernate" version="5.3.5" />
+        <dependency id="TauCode.Cqrs" version="1.3.2.2-dev-2020-12-06-21-01" />
       </group>
     </dependencies>
   </metadata>
