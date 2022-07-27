@@ -1,4 +1,4 @@
-2019-06-24
+﻿2019-06-24
 ==========
     1. Ported to the .NET Standard.
 
@@ -16,3 +16,11 @@
 ==========
     Version: 3.0.0.1
     1. Changed project structure.
+
+2021-04-03
+==========
+    1. Resurrection.
+
+2022-07-27
+==========
+    1. Release 1.3.7.
