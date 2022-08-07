@@ -1,14 +1,13 @@
 ﻿using NUnit.Framework;
 
-namespace TauCode.Cqrs.NHibernate.Tests
+namespace TauCode.Cqrs.NHibernate.Tests;
+
+[TestFixture]
+public class CqrsNHibernateDummyFixture
 {
-    [TestFixture]
-    public class CqrsNHibernateDummyFixture
+    [Test]
+    public void CqrsNHibernateDummyTest()
     {
-        [Test]
-        public void CqrsNHibernateDummyTest()
-        {
-            Assert.Pass("Passed; added for Jenkins.");
-        }
+        Assert.Pass("Added for CI/CD.");
     }
 }
