@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>TauCode.Cqrs.NHibernate</id>
-    <version>1.7.1-alpha.1.2023-01-26.11-39</version>
+    <version>1.8.1-alpha.1.2023-04-07.09-19</version>
     <authors>TauCode</authors>
     <owners>TauCode</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -13,13 +13,13 @@
       Basic functionality for CQRS support via NHibernate
     </description>
     <releaseNotes>
-      Developing release 1.7.1.
+      Developing release 1.8.1.
     </releaseNotes>
     <tags>taucode cqrs nhibernate</tags>
     <dependencies>
       <group targetFramework=".NETCoreApp6.0">
         <dependency id="NHibernate" version="5.4.0" />
-        <dependency id="TauCode.Cqrs" version="1.7.0" />
+        <dependency id="TauCode.Cqrs" version="1.8.1-alpha.1.2023-04-06.11-19" />
       </group>
     </dependencies>
   </metadata>

@@ -3,10 +3,10 @@
 namespace TauCode.Cqrs.NHibernate.Tests;
 
 [TestFixture]
-public class CqrsNHibernateDummyFixture
+public class DummyFixture
 {
     [Test]
-    public void CqrsNHibernateDummyTest()
+    public void DummyTest()
     {
         Assert.Pass("Added for CI/CD.");
     }
