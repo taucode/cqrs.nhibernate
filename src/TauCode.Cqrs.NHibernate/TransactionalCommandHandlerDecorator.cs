@@ -1,5 +1,6 @@
 ﻿using NHibernate;
 using System.Data;
+using System.Windows.Input;
 using TauCode.Cqrs.Commands;
 
 namespace TauCode.Cqrs.NHibernate;
