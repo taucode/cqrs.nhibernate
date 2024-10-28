@@ -1,9 +1,9 @@
 dotnet restore
 
-dotnet build --configuration Debug
-dotnet build --configuration Release
+dotnet build TauCode.Cqrs.NHibernate.sln -c Debug
+dotnet build TauCode.Cqrs.NHibernate.sln -c Release
 
-dotnet test -c Debug .\test\TauCode.Cqrs.NHibernate.Tests\TauCode.Cqrs.NHibernate.Tests.csproj
-dotnet test -c Release .\test\TauCode.Cqrs.NHibernate.Tests\TauCode.Cqrs.NHibernate.Tests.csproj
+dotnet test TauCode.Cqrs.NHibernate.sln -c Debug
+dotnet test TauCode.Cqrs.NHibernate.sln -c Release
 
 nuget pack nuget\TauCode.Cqrs.NHibernate.nuspec
